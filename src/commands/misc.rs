@@ -29,7 +29,7 @@ pub async fn help(ctx: Context, command: ApplicationCommandInteraction) {
                 category_commands = vec!["kick", "ban", "unban"]; // EDIT THIS AS YOU ADD MORE COMMANDS
             }else if value == "Miscellaneous commands." {
                 title = "Miscellaneous Commands".to_string();
-                category_commands = vec!["ping", "getavatar"]; // EDIT THIS AS YOU ADD MORE COMMANDS
+                category_commands = vec!["ping", "getavatar", "8ball"]; // EDIT THIS AS YOU ADD MORE COMMANDS
             }
 
             if let Err(why) = command.create_interaction_response(&ctx.http, |response|{
